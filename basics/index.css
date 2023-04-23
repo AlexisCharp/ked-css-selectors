@@ -1,0 +1,102 @@
+/** 1. Element targeting */
+
+/* h1 {
+  color: red;
+} */
+
+/** 2. Class targeting */
+
+/* .text {
+  background-color: antiquewhite;
+  color: #131111;
+} */
+
+/** 3. Id targeting */
+
+/* #text {
+  background-color: brown;
+  color: #fff;
+} */
+
+/** 4. Wildcard */
+
+/* * {
+  background-color: #131111;
+  box-sizing: border-box;
+} */
+
+/** 5. Attribute targeting */
+
+/* [data-attr='attr'] {
+  background-color: burlywood;
+  color: #131111;
+} */
+
+/** 6. Rich targeting */
+
+/* p.text#text[data-attr='attr'] {
+  background-color: blue;
+} */
+
+/** 7. Group targeting */
+
+/* .group {
+  padding: 1rem;
+  border: solid red 1px;
+}
+
+.element1,
+.element2,
+.element3 {
+  background-color: #131111;
+  color: #fff;
+} */
+
+/** 8. Direct children targeting */
+
+/* ul.list1 {
+  padding: 1rem;
+  border: solid blue 1px;
+}
+
+ul.list1 > li {
+  background-color: #131111;
+  color: #fff; 
+} */
+
+/** 9. All children targeting */
+
+/* ul.list2 {
+  padding: 1rem;
+  border: solid blue 1px;
+} */
+
+/* ! Should not work */
+/* ul.list2 > li {
+  background-color: #131111;
+  color: #fff;
+} */
+
+/* ? Should work */
+/* ul.list2 li {
+  background-color: #131111;
+  color: #fff;
+} */
+
+/** 10. Adjacent sibling targeting */
+
+/* h2.adjacent + p {
+  color: blue;
+} */
+
+/** 11. General sibling targeting */
+
+/* h2.general ~ p {
+  color: blue;
+} */
+
+/** 12. Child targeting */
+
+/* .container .child {
+  background-color: red;
+} */

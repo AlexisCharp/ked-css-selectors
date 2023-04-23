@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors (Basics)</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <head>
+      <!-- 1. Element targeting -->
+      <h1>CSS Basic Selectors</h1>
+    </head>
+    <main>
+      <!-- 2. Class targeting -->
+      <p class="text">Some text</p>
+
+      <hr />
+
+      <!-- 3. Id targeting -->
+      <p id="text">Some other text</p>
+
+      <hr />
+
+      <!-- 5. Attribute targeting -->
+      <p data-attr="attr">Some text with data-attribute</p>
+
+      <hr />
+
+      <!-- 6. Rich targeting -->
+      <p class="text" id="text" data-attr="attr">
+        Some text with combined selectors
+      </p>
+
+      <hr />
+
+      <!-- 7. Group targeting -->
+      <div class="group">
+        <p class="element1">Group Element 1</p>
+        <p class="element2">Group Element 2</p>
+        <p class="element3">Group Element 3</p>
+      </div>
+
+      <hr />
+
+      <!-- 8. Direct children targeting -->
+      <ul class="list1">
+        <li>list Element 1</li>
+        <li>list Element 2</li>
+        <li>list Element 3</li>
+      </ul>
+
+      <hr />
+
+      <!-- 9. All children targeting -->
+      <ul class="list2">
+        <div>
+          <li>list Element 1</li>
+          <li>list Element 2</li>
+          <li>list Element 3</li>
+        </div>
+      </ul>
+
+      <hr />
+
+      <!-- 10. Adjacent sibling targeting -->
+      <p>Apples come before.</p>
+      <h2 class="adjacent">Fruit colors</h2>
+      <p>Apples are red.</p>
+      <p>Bananas are yellow.</p>
+      <p>Oranges are orange.</p>
+      <h2 class="adjacent">Fruit shapes</h2>
+      <p>Apples are round.</p>
+      <p>Bananas are curved.</p>
+      <p>Oranges are round.</p>
+
+      <hr />
+
+      <!-- 11. General sibling targeting -->
+      <p>Apples come before.</p>
+      <h2 class="general">Fruit colors</h2>
+      <p>Apples are red.</p>
+      <p>Bananas are yellow.</p>
+      <p>Oranges are orange.</p>
+      <h2 class="general">Fruit shapes</h2>
+      <p>Apples are round.</p>
+      <p>Bananas are curved.</p>
+      <p>Oranges are round.</p>
+
+      <!-- 12. Child targeting -->
+      <div class="container">
+        <div>
+          <span class="child">Deep child</span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
