@@ -1,0 +1,8 @@
+ul:focus-within {
+  border: solid red 1px;
+}
+
+p:target {
+  color: blue;
+  background-color: goldenrod;
+}
